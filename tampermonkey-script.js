@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         github-go-deepwiki
 // @namespace
-// @version      0.2
+// @version      0.3
 // @description  github仓库跳转到deepwiki
 // @source       https://github.com/gxr404/go-deepwiki
 // @author       gxr404
@@ -29,6 +29,8 @@ function watchDom(dom, callback) {
 }
 
 function main() {
+  // match https://github.com/<user>/<repo>
+  if (location.pathname.split('/').filter(Boolean).length !== 2) return
   if (document.getElementById('go-deepwiki')) return
   const repoBtnContainer = document.getElementById('repository-details-container')
   if (!repoBtnContainer) return
