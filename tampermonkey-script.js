@@ -7,6 +7,7 @@
 // @author       wuding129
 // @match        https://github.com/*
 // @grant        GM_addStyle
+// @license      MIT
 // ==/UserScript==
 
 (function() {
