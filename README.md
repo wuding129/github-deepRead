@@ -1,6 +1,6 @@
 # github-deepRead
 
-github 跳转 deepwiki、readmeX、Zread 的油猴脚本
+github 跳转 deepwiki、codeWiki、readmeX、Zread 的油猴脚本
 
 ## 安装
 
