@@ -133,6 +133,7 @@ function createDropDownDOM() {
 
   const repName = location.pathname.split('/').filter(Boolean).slice(0,2).join('/');
   const deepWikiUrl = `https://deepwiki.com/${repName}`;
+  const codeWikiXUrl = `https://codewiki.google/github.com/${repName}`;
   const zreadUrl = `https://zread.ai/${repName}`;
   const readmeXUrl = `https://readmex.com/${repName}`;
 
@@ -149,6 +150,7 @@ function createDropDownDOM() {
   </button>
   <div class="go-deepwiki-dropdown-content" role="menu">
     <a href="${deepWikiUrl}" target="_blank" rel="nofollow" role="menuitem">DeepWiki</a>
+    <a href="${codeWikiXUrl}" target="_blank" rel="nofollow" role="menuitem">CodeWiki</a>
     <a href="${zreadUrl}" target="_blank" rel="nofollow" role="menuitem">Zread</a>
     <a href="${readmeXUrl}" target="_blank" rel="nofollow" role="menuitem">ReadmeX</a>
   </div>
